@@ -16,7 +16,7 @@ jobs:
       - name: Get the repository code
         uses: actions/checkout@v4
       - name: Install dependencies
-        run: npm ci
+        run: npm install --force
       - name: Lint applcation
         run: npm run lint
   build:
@@ -25,7 +25,7 @@ jobs:
       - name: Get the repository code
         uses: actions/checkout@v4
       - name: Install dependencies
-        run: npm ci
+        run: npm install --force
       - name: Build applcation
         run: npm run build
       - name: Deplot
