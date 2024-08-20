@@ -7,7 +7,7 @@ jobs:
       - name: Get the repository code
         uses: actions/checkout@v4
       - name: Install dependencies
-        run: npm ci
+        run: npm install --force
       - name: Test applcation
         run: npm run test
   lint:
