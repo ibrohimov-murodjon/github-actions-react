@@ -10,23 +10,9 @@ jobs:
         run: npm install --force
       - name: Test applcation
         run: npm run test
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get the repository code
-        uses: actions/checkout@v4
-      - name: Install dependencies
-        run: npm install --force
       - name: Lint applcation
         run: npm run lint
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get the repository code
-        uses: actions/checkout@v4
-      - name: Install dependencies
-        run: npm install --force
       - name: Build applcation
         run: npm run build
-      - name: Deplot
+      - name: Deploy
         run: echo Deploying...
